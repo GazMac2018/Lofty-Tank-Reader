@@ -41,14 +41,14 @@ When the Send Unit awakes. it sends the following information:
 3. The Battery Voltage (min 3.2v ~ max 4.2v) Note: This is not the true voltage of the battery during the day but is correct during the night
 4. The Solar Voltage (min 0v ~ max 5v)
 5. The Temperature inside the box containing the components.
-6. Awake or Sleep Mode as requested by the MasterRecUnit.
+6. Sleep Time as requested by the MasterRecUnit.
 
-The Header Unit is programmed to go into Sleep Mode for the period calculated by the MasterRecUnit. This Sleep Time can be any thing to Zero (Awake Mode) up to 3 hours.  All Sleep Times will calculated to give output on the Hour or at least from the whole hour in periods requested.  Example: For 20m periods the output will be every 20m from the Hour.
+The Send Unit is programmed to go into Sleep Mode for the period calculated by the MasterRecUnit. This Sleep Time can be any thing to Zero (Awake Mode) up to 3 hours.  All Sleep Times will calculated to give output on the Hour or at least from the whole hour in periods requested.  Example: For 20m periods the output will be every 20m from the Hour.
 
-If the Header unit's battery voltage drops below 3.3, the unit is put into Sleep Mode for 1 hour and will continue to set the Sleep Mode every hour until the voltage is higher than 3.3 volts.
+If the Send Unit's battery voltage drops below 3.3, the unit is put into Sleep Mode for 1 hour and will continue to set the Sleep Mode every hour until the voltage is higher than 3.3 volts.
 
-The Header Unit also automatically goes into a Sleep Mode cycle every 1 hour if the MasterRecUnit is switched off or goes off-line for any reason. 
+The Send Unit also automatically goes into a Sleep Mode cycle every 1 hour if the MasterRecUnit is switched off or goes off-line for any reason. 
 
-Upon request for data from the MasterRecUnit to the other 2 SlaveSendUnit(s) named DBL Main and uDeck, the only data sent back is the distance from the top of the tank to the water level. These units will be powered by mains power through a 5v power pack and will operate 24/7.
+Upon request for data from the MasterRecUnit to the other 2 SlaveSendUnit(s) named DBL Main and uDeck (These names can be changes the the scripts as required), the only data sent back is the distance from the top of the tank to the water level. These Send Units will be powered by mains power through a 5v power pack and will operate 24/7.
 
-Of course these additional units can be Solar powered if required.
+Of course these additional Send Units can be Solar powered if required.
